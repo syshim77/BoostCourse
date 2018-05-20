@@ -20,11 +20,11 @@
   * major methods
     + init(title:message:preferredStyle:), func addAction(UIAlertAction), func addTextField(configurationHandler: ((UITextField)->Void)?=nil)
   * major property
-    + title:String?, message:String?, actions:[UIAlertAction], preferredStyle[UIAlertControllerStyle]
+    + title:String?, message:String?, actions:[UIAlertAction], preferredStyle[UIAlertControllerStyle]  
     *[for more information about UIAlertController](https://developer.apple.com/documentation/uikit/uialertcontroller)*
 - UIAlertAction class
   * major property
-    + title:String?, isEnabled:Bool, style:UIAlertActionStyle
+    + title:String?, isEnabled:Bool, style:UIAlertActionStyle  
     *[for more information about UIAlertAction](https://developer.apple.com/documentation/uikit/uialertaction)*
 - UIAlertActionStyle
   * default, cancel, destructive
@@ -39,11 +39,11 @@
   * set back user's decision or operation is not important
 
 ##### Tab Bar
-- tab bar : use for conversion between categories or provide same information in various viewpoint
+- tab bar : use for conversion between categories or provide same information in various viewpoint  
 *[for more information about tab bars](https://developer.apple.com/ios/human-interface-guidelines/bars/tab-bars/)*
-  * tab bar controller : control tab bar
-  *[for more information about UITabBarController](https://developer.apple.com/documentation/uikit/uitabbarcontroller)*
-  *[for more information about tab bar controllers](https://developer.apple.com/library/content/documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/TabBarControllers.html)*
+  * tab bar controller : control tab bar  
+  *[for more information about UITabBarController](https://developer.apple.com/documentation/uikit/uitabbarcontroller)*  
+  *[for more information about tab bar controllers](https://developer.apple.com/library/content/documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/TabBarControllers.html)*  
   *[for more information about UITabBarControllerDelegate](https://developer.apple.com/documentation/uikit/uitabbarcontrollerdelegate)*
   * tab bar interface : compose interface using tab bar and tab bar controller
 - tab bar structure
@@ -52,22 +52,22 @@
 - tab bar delegate : monitor something related to tab and customize
 
 ##### URLSession & URLSessionDataTask
-- URLSession : class provide API that give and take contents(data) through HTTP/HTTPS
-*[for more information about URLSession](https://developer.apple.com/documentation/foundation/urlsession)*
+- URLSession : class provide API that give and take contents(data) through HTTP/HTTPS  
+*[for more information about URLSession](https://developer.apple.com/documentation/foundation/urlsession)*  
 *[for more information about URLSessionConfiguration](https://developer.apple.com/documentation/foundation/urlsessionconfiguration)*
-- Request/Response
-*[for more information about URLResponse](https://developer.apple.com/documentation/foundation/urlresponse)*
+- Request/Response  
+*[for more information about URLResponse](https://developer.apple.com/documentation/foundation/urlresponse)*  
 *[for more information about URL](https://developer.apple.com/documentation/foundation/url)*
 - Session type
   * default, ephemeral, background session
-- task
+- task  
 *[for more information about URLSessionTask](https://developer.apple.com/documentation/foundation/urlsessiontask)*
-  * URLSessionDataTask : bring data object taking response data from server using HTTP methods
+  * URLSessionDataTask : bring data object taking response data from server using HTTP methods  
   *[for more information about URLSessionDataTask](https://developer.apple.com/documentation/foundation/urlsessiondatatask)*
   * URLSessionUploadTask : upload data object or file data through web server in application
-  * URLSessionDownloadTask : download data from server and save as file type(can download in background state)
+  * URLSessionDownloadTask : download data from server and save as file type(can download in background state)  
   *[about URL loading system](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/URLLoadingSystem/URLLoadingSystem.html)*
-- ATS(App Transport Security) : function for security enforcement between application and web service
+- ATS(App Transport Security) : function for security enforcement between application and web service  
 *[for more information about ATS](https://developer.apple.com/library/content/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html)*
 - ATS operation
   * give and take data using URLSession, CFURL, NSURLConnection
@@ -83,14 +83,14 @@
 
 ##### Grand Central Dispatch
 - GCD(Grand Central Dispatch) : technique APPLE develops for optimized programming in multi-core and multi-processing condition
-  * operation system manage thread pool -> programmer use task asynchronously
-  *[for more information about dispatch](https://developer.apple.com/documentation/dispatch)*
-  *[for more information about GCD](https://en.wikipedia.org/wiki/Grand_Central_Dispatch)*
+  * operation system manage thread pool -> programmer use task asynchronously  
+  *[for more information about dispatch](https://developer.apple.com/documentation/dispatch)*  
+  *[for more information about GCD](https://en.wikipedia.org/wiki/Grand_Central_Dispatch)*  
   *[concurrency programming guide](https://developer.apple.com/library/content/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html)*
 - dispatch queue : perform task continuously or concurrently but execute in FIFO order
   * Serial Dispatch Queue : only one task per once
-  * Concurrent Dispatch Queue : do task as much as can
-  *[for more information about dispatch queue](https://developer.apple.com/documentation/dispatch/dispatchqueue)*
+  * Concurrent Dispatch Queue : do task as much as can  
+  *[for more information about dispatch queue](https://developer.apple.com/documentation/dispatch/dispatchqueue)*  
   *[for more information about dispatch qos](https://developer.apple.com/documentation/dispatch/dispatchqos)*
 - dispatch source : C based mechanism for asynchronous handling specific type of system event
 - operation queue : operate same as concurrent dispatch queue
@@ -99,10 +99,10 @@
   * can do moratorium, restarting, canceling operation
 
 ##### Notification Center & Notification
-- notification : structure for delivering information through notification center in registered notification
+- notification : structure for delivering information through notification center in registered notification  
 *[for more information about notification](https://developer.apple.com/documentation/foundation/notification)*
 - notification center : class delivers notification simultaneously to registered observer
   * stream flows synchronously
-  * use NotificationQueue to use notification asynchronously
-  *[for more information about notification center](https://developer.apple.com/documentation/foundation/notificationcenter)*
+  * use NotificationQueue to use notification asynchronously  
+  *[for more information about notification center](https://developer.apple.com/documentation/foundation/notificationcenter)*  
   *[for more information about notification queue](https://developer.apple.com/documentation/foundation/notificationqueue)*

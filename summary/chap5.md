@@ -1,5 +1,7 @@
 ## 영화정보 애플리케이션
 
+#### 부스트코스 iOS PJT5
+
 ##### overview
 - 개요
   * server API 통신
